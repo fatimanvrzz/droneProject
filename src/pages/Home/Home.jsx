@@ -1,28 +1,26 @@
 import React from "react";
-import "./home.scss";
 import { PiArrowBendUpRightDuotone } from "react-icons/pi";
 
 function Home() {
   return (
     <>
-      <div className="home">
-        <div className="homee-background">
-          <img src="" alt="" />
-        </div>
-        <div className="text">
+      <div className="flex h-screen bg-[url(../src/assets/images/drone.jpg)] w-[100%] bg-center bg-no-repeat bg-cover bg-fixed z-[1]">
+       
+        <div className="flex flex-col justify-center h-80 w-[40rem] mt-56 ml-48 leading-[0.9] font-inter text-white z-[2]">
           <p>
-            <div className="line-border"></div> The World’s Smallest Quadcopter
+            <div className="border-t-[1px] border-white w-16"></div>
+            <p>The World&#39;s Smallest Quadcopter</p>
           </p>
-          <h1>Elomus F18 Drone 3 Auto</h1>
-          <h4>
+          <h1 className="text-8xl mx-0">Elomus F18 Drone 3 Auto</h1>
+          <h4 className="text-[0.9rem]">
             Newest Hover Function, Elomus F18 Drone 3 Auto Quadcopter UFO With
-            2Mp Wifi Camera{" "}
+            2Mp Wifi Camera
           </h4>
-          <div className="someButton"> Shop now</div>
+          <div className="flex w-fit mt-30 pt-3 pb-3 pr-5 pl-5 border-2 rounded-full"> Shop now</div>
         </div>
       </div>
 
-      <div className="experience">
+      <div className="flex flex-col w-full h-[125vh] items-center mt-8 leading-6">
         <div className="title">
           <p>Experience</p>
           <h4>FLY IN THE SKY</h4>
@@ -215,22 +213,43 @@ function Home() {
             </div>
             <div className="screen-container">
               <div className="col1">
-              {ScreenContainerContent("https://elomus-theme.myshopify.com/cdn/shop/files/icon1_static6_26d96bf0-1781-4c3a-9f63-35a5c5c4764b.png?v=1613722925", "Flight time", "30 MINS")}
-              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon3_static6.png?v=1613722925", "Control range", "7 KM")}
-              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon5_static6.png?v=1613722925", "Sensor range", "30 M")}
+                {ScreenContainerContent(
+                  "https://elomus-theme.myshopify.com/cdn/shop/files/icon1_static6_26d96bf0-1781-4c3a-9f63-35a5c5c4764b.png?v=1613722925",
+                  "Flight time",
+                  "30 MINS"
+                )}
+                {ScreenContainerContent(
+                  "//elomus-theme.myshopify.com/cdn/shop/files/icon3_static6.png?v=1613722925",
+                  "Control range",
+                  "7 KM"
+                )}
+                {ScreenContainerContent(
+                  "//elomus-theme.myshopify.com/cdn/shop/files/icon5_static6.png?v=1613722925",
+                  "Sensor range",
+                  "30 M"
+                )}
               </div>
               <div className="col2">
-              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon2_static6.png?v=1613722925", "Speed", "72 KM/H")}
-              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon4_static6.png?v=1613722925", "Video resolution", "4K 60fps")}
-              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon6_static6.png?v=1613722926", "Obstacle sensing", "5 DIRECTIONS")}
+                {ScreenContainerContent(
+                  "//elomus-theme.myshopify.com/cdn/shop/files/icon2_static6.png?v=1613722925",
+                  "Speed",
+                  "72 KM/H"
+                )}
+                {ScreenContainerContent(
+                  "//elomus-theme.myshopify.com/cdn/shop/files/icon4_static6.png?v=1613722925",
+                  "Video resolution",
+                  "4K 60fps"
+                )}
+                {ScreenContainerContent(
+                  "//elomus-theme.myshopify.com/cdn/shop/files/icon6_static6.png?v=1613722926",
+                  "Obstacle sensing",
+                  "5 DIRECTIONS"
+                )}
               </div>
             </div>
-            
           </div>
           <div className="pictures-side">
-            <img
-              src="https://elomus-theme.myshopify.com/cdn/shop/files/img-static6-elomus1.jpg?v=1613722925"
-            />
+            <img src="https://elomus-theme.myshopify.com/cdn/shop/files/img-static6-elomus1.jpg?v=1613722925" />
           </div>
         </div>
       </div>
