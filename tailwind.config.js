@@ -11,6 +11,11 @@ export default {
         inter: 'Inter, sans-serif'
       }
     },
+    extend: {
+      textColor: {
+        color: 'Poppins, sans-serif',
+      }
+    },
   },
   plugins: [],
 }

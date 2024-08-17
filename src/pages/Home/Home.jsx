@@ -9,74 +9,74 @@ function Home() {
         <div className="flex flex-col justify-center h-80 w-[40rem] mt-56 ml-48 leading-[0.9] font-inter text-white z-[2]">
           <p>
             <div className="border-t-[1px] border-white w-16"></div>
-            <p>The World&#39;s Smallest Quadcopter</p>
+            <p className="flex items-center gap-6 pb-5 pt-5">The World&#39;s Smallest Quadcopter</p>
           </p>
-          <h1 className="text-8xl mx-0">Elomus F18 Drone 3 Auto</h1>
-          <h4 className="text-[0.9rem]">
+          <h1 className="text-8xl mx-0 mb-1">Elomus F18 Drone 3 Auto</h1>
+          <h4 className="text-[0.9rem] mb-10">
             Newest Hover Function, Elomus F18 Drone 3 Auto Quadcopter UFO With
             2Mp Wifi Camera
           </h4>
-          <div className="flex w-fit mt-30 pt-3 pb-3 pr-5 pl-5 border-2 rounded-full"> Shop now</div>
+          <div className="flex w-fit mt-30 pt-3 pb-3 pr-5 pl-5 border-2 rounded-full hover:bg-white: border-1 decoration-slate-[#7aaef0] cursor-pointer"> Shop now</div>  {/* background-color islemedi */}
         </div>
       </div>
 
       <div className="flex flex-col w-full h-[125vh] items-center mt-8 leading-6">
-        <div className="title">
-          <p>Experience</p>
-          <h4>FLY IN THE SKY</h4>
+        <div className="flex flex-col items-center justify-center font-poppins italic mb-5 ">
+          <p className="text-xl normal-case">Experience</p>  {/* color eliye bilmedim */}
+          <h4 className="font-poppins text-3xl m-0 font-semibold pb-6 leading-normal">FLY IN THE SKY</h4>
         </div>
-        <div className="two-lines">
-          <div className="line1"></div>
-          <div className="line2"></div>
+        <div className="flex flex-col justify-center items-center m-0 p-0 leading-none">
+          <div className="w-16 mr-8 border-solid-1"></div>
+          <div className="w-16 ml-8 border-solid-1"></div>
         </div>
-        <div className="dord-qutu">
+        <div className="flex w-[1450] p-8 items-center leading-6  gap-6 mt-12 text-base font-inter  ">
           <div className="first-box">
-            <div className="qutunun-ici">
-              <img
+            <div className="flex flex-col justify-center items-center text-xl text-center">
+              <img className="w-1/5"
                 src="https://elomus-theme.myshopify.com/cdn/shop/files/drone_rotate_360.png?crop=center&height=56&v=1613722857&width=56"
                 alt=""
               />
-              <h5>Immersive Field of View</h5>
-              <p>
+              <h5 className="decoration-[#454545] font-semibold" >Immersive Field of View</h5>
+              <p className="decoration-[#808080] font-extralight">
                 Screen equivalent to 125” screen viewed from 10 feet with 24-bit
                 true color (16 million colors)
               </p>
             </div>
           </div>
           <div className="second-box">
-            <div className="qutunun-ici">
-              <img
+            <div className="flex flex-col justify-center items-center text-xl text-center">
+              <img className="w-1/5"
                 src="https://elomus-theme.myshopify.com/cdn/shop/files/hdmi_connect_b00a5bc7-e202-4b35-bf90-534e48ea97fd.png?crop=center&height=61&v=1613722857&width=61"
                 alt=""
               />
-              <h5>USB & HDMI</h5>
-              <p>
+              <h5 className="decoration-[#454545] font-semibold">USB & HDMI</h5>
+              <p className="decoration-[#808080] font-extralight">
                 Includes optional full immersion face mask. Supports HDMI
                 industry standard 3D content
               </p>
             </div>
           </div>
           <div className="third-box">
-            <div className="qutunun-ici">
-              <img
+            <div className="flex flex-col justify-center items-center text-xl text-center">
+              <img className="w-1/5"
                 src="https://elomus-theme.myshopify.com/cdn/shop/files/high_battery_393941be-6fa4-48b5-bc37-dea5252fb748.png?crop=center&height=56&v=1613722857&width=56"
                 alt=""
               />
-              <h5>Battery</h5>
-              <p>
+              <h5 className="decoration-[#454545] font-semibold" >Battery</h5>
+              <p className="decoration-[#808080] font-extralight">
                 Built-in batteries allow the pilot to participate in the sport
                 for hours of racing.
               </p>
             </div>
           </div>
           <div className="fourth-box">
-            <div className="qutunun-ici">
-              <img
+            <div className="flex flex-col justify-center items-center text-xl text-center">
+              <img className="w-1/5"
                 src="https://elomus-theme.myshopify.com/cdn/shop/files/return_back_if_error.png?crop=center&height=46&v=1613722857&width=67"
                 alt=""
               />
-              <h5>Return to Home</h5>
-              <p>
+              <h5 className="decoration-[#454545] font-semibold" >Return to Home</h5>
+              <p className="decoration-[#808080] font-extralight">
                 Tells the drone to automatically come back to you using GPS.
                 It's a very useful convenient feature.
               </p>
