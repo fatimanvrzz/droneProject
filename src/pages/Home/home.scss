@@ -30,9 +30,7 @@
   p {
     display: flex;
     align-items: center;
-    font-style: italic;
     gap: 1.5rem;
-    font-weight: 700;
     padding-bottom: 20px;
   }
   h1 {
@@ -114,17 +112,17 @@
     padding: 0;
     line-height: 1;
 
-    .line1{
+    .line1 {
       width: 4rem;
       margin-right: 2rem;
       border: 1px solid #7aaef0;
     }
 
-    .line2{
+    .line2 {
       width: 4rem;
       margin-left: 4rem;
       border: 0.5px solid #7aaef0;
-      margin-top: 5%;  
+      margin-top: 5%;
     }
   }
   .dord-qutu {
@@ -172,7 +170,6 @@
     margin-left: 5rem;
     cursor: pointer;
   }
-  
 }
 
 .banner-text {
@@ -424,7 +421,7 @@
   justify-content: center;
   align-items: center;
   font-family: Poppins, sans-serif;
-  
+
   .headLine {
     display: flex;
     flex-direction: column;
@@ -462,64 +459,85 @@
     padding: 0;
     line-height: 1;
 
-    .line1{
+    .line1 {
       width: 4rem;
       margin-right: 2rem;
       border: 1px solid #7aaef0;
     }
 
-    .line2{
+    .line2 {
       width: 4rem;
       margin-left: 4rem;
       border: 0.5px solid #7aaef0;
-      margin-top: 5%;  
+      margin-top: 5%;
     }
   }
-  .boyuk-qutu{
+  .boyuk-qutu {
     display: flex;
     width: 1200px;
     margin-top: 4rem;
     justify-content: space-between;
 
-    .ikiliqutu{
+    .ikiliqutu {
       display: flex;
       flex-direction: column;
 
-      .text-side{
+      .text-side {
         display: flex;
         align-items: left;
         justify-content: center;
         font-size: 15px;
         color: #7e7e7e;
       }
-      
-      .screen-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid #292929;
-        background-color: greenyellow;
 
-        .bottom-line1, .bottom-line2, .bottom-line3{
+      .screen-container {
+        display: flex;
+        .col1 {
           display: flex;
-          align-items: center;
-          background-color: red;
-          height: 5rem;
-          gap: 8rem;
-          border: 1px solid #292929;
+          gap: 10px;
+          flex-direction: column;
         }
-        .qutu1, .qutu2, .qutu3, .qutu4, .qutu5, .qutu6{
+        .col2 {
           display: flex;
+          gap: 10px;
+          flex-direction: column;
+        }
+        .screen-container-content {
+          display: flex;
+          flex-direction: row;
           align-items: center;
-          background-color: yellow;
-          
+          justify-content: space-between;
+          width: 300px;
+          height: 50px;
+          padding: 0;
+          margin: 0;
+
+          .icon {
+            display: flex;
+            align-items: center;
+            height: 38px;
+          }
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            color: #292929;
+            gap: 5px;
+            margin: 0;
+            padding: 0;
+
+            margin-left: 25px;
+
+            p {
+              margin: 0;
+              padding: 0;
+            }
+          }
         }
       }
     }
-    .pictures-side{
+    .pictures-side {
       width: 60%;
     }
-
   }
-  }
-
+}

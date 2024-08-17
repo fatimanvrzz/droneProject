@@ -214,42 +214,22 @@ function Home() {
               </p>
             </div>
             <div className="screen-container">
-            <div className="bottom-line1">
-              <div className="qutu1">
-                <img src="https://elomus-theme.myshopify.com/cdn/shop/files/icon1_static6_26d96bf0-1781-4c3a-9f63-35a5c5c4764b.png?v=1613722925" alt="" />
-                <p>Flight time <span>30 MINS</span> </p>
+              <div className="col1">
+              {ScreenContainerContent("https://elomus-theme.myshopify.com/cdn/shop/files/icon1_static6_26d96bf0-1781-4c3a-9f63-35a5c5c4764b.png?v=1613722925", "Flight time", "30 MINS")}
+              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon3_static6.png?v=1613722925", "Control range", "7 KM")}
+              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon5_static6.png?v=1613722925", "Sensor range", "30 M")}
               </div>
-              <div className="qutu2">
-              <img src="https://elomus-theme.myshopify.com/cdn/shop/files/icon2_static6.png?v=1613722925" alt="" />
-              <p>Speed <span>72 KM/H</span> </p>
-              </div>
-            </div>
-            <div className="bottom-line2">
-              <div className="qutu3">
-              <img src="https://elomus-theme.myshopify.com/cdn/shop/files/icon3_static6.png?v=1613722925" alt="" />
-              <p>Control range <span>7 KM</span> </p>
-              </div>
-              <div className="qutu4">
-              <img src="https://elomus-theme.myshopify.com/cdn/shop/files/icon4_static6.png?v=1613722925" alt="" />
-              <p>Video resolution <span>4K 60fps</span> </p>
+              <div className="col2">
+              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon2_static6.png?v=1613722925", "Speed", "72 KM/H")}
+              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon4_static6.png?v=1613722925", "Video resolution", "4K 60fps")}
+              {ScreenContainerContent("//elomus-theme.myshopify.com/cdn/shop/files/icon6_static6.png?v=1613722926", "Obstacle sensing", "5 DIRECTIONS")}
               </div>
             </div>
-            <div className="bottom-line3">
-              <div className="qutu5">
-              <img src="https://elomus-theme.myshopify.com/cdn/shop/files/icon5_static6.png?v=1613722925" alt="" />
-              <p>Sensor range <span>30 M</span> </p>
-              </div>
-              <div className="qutu6">
-              <img src="https://elomus-theme.myshopify.com/cdn/shop/files/icon6_static6.png?v=1613722926" alt="" />
-              <p>Obstacle sensing <span>5 DIRECTIONS</span> </p>
-              </div>
-            </div>
-            </div>
+            
           </div>
           <div className="pictures-side">
             <img
               src="https://elomus-theme.myshopify.com/cdn/shop/files/img-static6-elomus1.jpg?v=1613722925"
-              alt=""
             />
           </div>
         </div>
@@ -257,12 +237,25 @@ function Home() {
     </>
   );
 }
-
 function SomeButton() {
   return (
     <>
       <button>Shop</button>
     </>
+  );
+}
+
+function ScreenContainerContent(iconUrl, Title, Description) {
+  return (
+    <div className="screen-container-content">
+      <div className="icon">
+        <img src={iconUrl} />
+      </div>
+      <div className="text">
+        <p>{Title}</p>
+        <p>{Description}</p>
+      </div>
+    </div>
   );
 }
 
