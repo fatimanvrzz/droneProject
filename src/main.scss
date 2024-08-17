@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
+
+
+
+
 body {
     margin: 0;
     padding: 0;
+}
+
+.our-store{
+    display: flex;
+    height: 40vh;
+    background: url(../src/assets/images/drone2.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
 }

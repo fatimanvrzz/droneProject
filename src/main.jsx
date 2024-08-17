@@ -4,13 +4,15 @@ import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "./main.scss"
+import "./main.scss";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
+
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

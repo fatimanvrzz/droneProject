@@ -1,32 +1,50 @@
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #7aaef0;
+    
+}
 .navbar {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-self: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 4rem;
-    gap: 3rem;
+    gap: 9rem;
     margin-left: 2rem;
     margin-right: 2rem;
-}
+    color: #fff;
 
-.logo {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    color: #000000;
 }
 
 .links{
     display: flex;
-    gap: 1.5rem;
-
+    gap: 4rem;
+    color: #fff;
     a{
         font-family: "Inter", sans-serif;
         text-decoration: none;
-        color: #000000;
+        color: #fff;
         display: flex;
         gap: 0.2rem;
         align-items: center;
         justify-content: center;
     }
+
+    a:hover{
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding: 10px;
+        transition: all .2s ease-out;
+        background-color: transparent;
+    }
 }
+
+.container{
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+

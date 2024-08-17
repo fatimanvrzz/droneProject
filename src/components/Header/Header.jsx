@@ -9,9 +9,11 @@ function Header() {
   return (
     <div className="header">
       <div className="navbar">
-        <div className="logo">Elomus</div>
+        <div className="logo">
+          <img src="https://elomus-theme.myshopify.com/cdn/shop/files/logo-elomus.png?v=1613722537" alt="" />
+        </div>
         <div className="links">
-          {linkToPage("/", "Home")}
+          {linkToPage("/", "Home")} 
           {linkToPage("/", "Shop")}
           {linkToPage("/", "Top Products")}
           {linkToPage("/", "Product Pages")}
