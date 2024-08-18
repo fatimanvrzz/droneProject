@@ -7,7 +7,7 @@ function Home() {
       <div className="flex h-screen bg-[url(../src/assets/images/drone.jpg)] w-[100%] bg-center bg-no-repeat bg-cover bg-fixed z-[1]">
        
         <div className="flex flex-col justify-center h-80 w-[40rem] mt-56 ml-48 leading-[0.9] font-inter text-white z-[2]">
-          <p>
+          <p className="flex flex-row items-center justify-start gap-4">
             <div className="border-t-[1px] border-white w-16"></div>
             <p className="flex items-center gap-6 pb-5 pt-5">The World&#39;s Smallest Quadcopter</p>
           </p>
@@ -16,7 +16,7 @@ function Home() {
             Newest Hover Function, Elomus F18 Drone 3 Auto Quadcopter UFO With
             2Mp Wifi Camera
           </h4>
-          <div className="flex w-fit mt-30 pt-3 pb-3 pr-5 pl-5 border-2 rounded-full hover:border-1 hover:cursor-pointer hover:decoration-blue-300  hover:bg-white"> Shop now</div>  {/* background-color islemedi */}
+          <div className="flex w-fit mt-30 pt-3 pb-3 pr-5 pl-5 border-2 rounded-full hover:border-1 border-white transition-all duration-300 hover:border-blue-300 hover:cursor-pointer hover:decoration-blue-300 hover:text-blue-300 hover:bg-white"> Shop now</div>  {/* background-color islemedi */}
         </div>
       </div>
 
@@ -91,12 +91,13 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center text-2xl bg-blue-300 font-poppins italic px-5 py-5 decoration-white">
+      <div className="flex flex-col justify-center items-center text-2xl bg-blue-300 font-poppins italic px-5 py-5 text-white">
         <p>
           Buy Now Phantom 4 Professional offer an immersive, fun flying
           experience.
         </p>
-        <div className="someButton"> Shop now</div>
+        <div className="flex w-fit px-5 py-2 mt-5 text-white cursor-pointer bg-transparent border-[1px] border-white rounded-[50px] transition-all duration-300 font-poppins not-italic text-xl hover:bg-white hover:text-blue-300 backdrop-blur-sm ">
+          Shop now</div>
       </div>
 
       <div className="home-row">

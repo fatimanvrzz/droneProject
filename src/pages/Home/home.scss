@@ -182,15 +182,16 @@
   font-style: italic;
   padding: 20px 20px;
   color: #ffffff;
+  
   .someButton {
     display: flex;
     width: fit-content;
     padding: 10px 20px;
     color: white;
-    cursor: pointer;
+    cursor: pointer; 
     background-color: transparent;
     border: 1px solid #fff;
-    border-radius: 50px;
+    border-radius: 50px;  
     transition: all 0.3s ease;
     font-family: Poppins, sans-serif;
     font-style: normal;
