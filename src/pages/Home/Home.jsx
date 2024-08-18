@@ -16,7 +16,7 @@ function Home() {
             Newest Hover Function, Elomus F18 Drone 3 Auto Quadcopter UFO With
             2Mp Wifi Camera
           </h4>
-          <div className="flex w-fit mt-30 pt-3 pb-3 pr-5 pl-5 border-2 rounded-full hover:bg-white: border-1 decoration-slate-[#7aaef0] cursor-pointer"> Shop now</div>  {/* background-color islemedi */}
+          <div className="flex w-fit mt-30 pt-3 pb-3 pr-5 pl-5 border-2 rounded-full hover:border-1 hover:cursor-pointer hover:decoration-blue-300  hover:bg-white"> Shop now</div>  {/* background-color islemedi */}
         </div>
       </div>
 
@@ -83,7 +83,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="drone-pic">
+        <div className="flex mt-4 ml-20 cursor-pointer">
           <img
             src="https://elomus-theme.myshopify.com/cdn/shop/files/img-static2-elomus1.jpg?v=1613722920"
             alt=""
@@ -91,7 +91,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="banner-text">
+      <div className="flex flex-col justify-center items-center text-2xl bg-blue-300 font-poppins italic px-5 py-5 decoration-white">
         <p>
           Buy Now Phantom 4 Professional offer an immersive, fun flying
           experience.
