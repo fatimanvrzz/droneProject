@@ -12,7 +12,8 @@ import { GrInstagram } from "react-icons/gr";
 import { LuChevronUp } from "react-icons/lu";
 
 function Home() {
-  const [floatingIconButtonStyle, setFloatingIconButtonStyle] = useState("none");
+  const [floatingIconButtonStyle, setFloatingIconButtonStyle] =
+    useState("none");
 
   window.onscroll = function () {
     if (document.documentElement.scrollTop > 100) {
@@ -133,10 +134,10 @@ function Home() {
       </div>
 
       <div className="flex flex-col justify-center items-center text-2xl bg-blue-300 font-poppins italic px-5 py-5 text-white">
-        <p>
+        <span>
           Buy Now Phantom 4 Professional offer an immersive, fun flying
           experience.
-        </p>
+        </span>
         <div className="flex w-fit px-5 py-2 mt-5 text-white cursor-pointer bg-transparent border-[1px] border-white rounded-[50px] transition-all duration-300 font-poppins not-italic text-xl hover:bg-white hover:text-blue-300 backdrop-blur-sm ">
           Shop now
         </div>
@@ -162,30 +163,25 @@ function Home() {
                   className="w-16 h-16"
                 />
                 <p className="flex items-center justify-center gap-2 font-normal">
-                  {" "}
-                  <span className="font-medium text-2xl">58</span> mm{" "}
+                  <span className="font-medium text-2xl">58</span> mm
                 </p>
               </div>
               <div className="flex gap-2">
-                {" "}
                 <img
                   src="https://elomus-theme.myshopify.com/cdn/shop/files/video_quality_icon_0316d479-1b9a-4475-93d7-d89ef194a887.png?v=1613722922"
                   className="w-16 h-16"
                 />
                 <p className="flex items-center justify-center gap-2 font-normal">
-                  {" "}
-                  <span className="font-medium text-2xl">40</span> fps{" "}
+                  <span className="font-medium text-2xl">40</span> fps
                 </p>
               </div>
               <div className="flex gap-2">
-                {" "}
                 <img
                   src="https://elomus-theme.myshopify.com/cdn/shop/files/drone_weight_icon_71b6e908-27ba-4b11-9d88-e003ade5aad8.png?v=1613722922"
                   className="w-16 h-16"
                 />
                 <p className="flex items-center justify-center gap-2 font-normal">
-                  {" "}
-                  <span className="font-medium text-2xl">450</span> g{" "}
+                  <span className="font-medium text-2xl">450</span> g
                 </p>
               </div>
             </div>
@@ -203,30 +199,30 @@ function Home() {
             src="https://elomus-theme.myshopify.com/cdn/shop/files/img-static4-elomus1.jpg?v=1613722922"
             className="h-[40rem] mb-10"
           />
-          <div className="display:-[50rem] z-2 absolute w-[1200px] leding-4">
-            <div className="absolute align-right left-[1%] top-[30%] max-w-[225px]">
+          <div className="z-2 absolute w-[1200px] h-[800px] leding-4">
+            <div className="absolute flex flex-col text-right top-[30%] left-[1%] max-w-[225px]">
               <h3 className="text-nonegray">Robust Structure</h3>
-              <p className=" text-metalic">
+              <span className="text-metalic">
                 Even after falling down, your drone will rise the phoenix.
-              </p>
+              </span>
             </div>
-            <div className="absolute left-[5%] top-[80%] max-w-[230px] align-right">
+            <div className="absolute flex flex-col text-right top-[80%] left-[5%] max-w-[230px]">
               <h3 className="text-dark-gray">HD Video Recording</h3>
-              <p className=" text-metalic">
+              <span className="text-metalic">
                 Get the drone with a spectacular 4k camera.
-              </p>
+              </span>
             </div>
-            <div className="absolute align-left  left-[79%] top-[25%] max-w-[225px]">
+            <div className="absolute flex flex-col text-left top-[25%] left-[79%] max-w-[225px]">
               <h3 className="text-dark-gray">Simple Disassembly</h3>
-              <p className=" text-metalic">
-                Need a new detail? No problem at all!{" "}
-              </p>
+              <span className="text-metalic">
+                Need a new detail? No problem at all!
+              </span>
             </div>
-            <div className="absolute align-left  left-[78%] top-[67%] max-w-[225px]">
+            <div className="absolute flex flex-col text-left top-[67%] left-[78%] max-w-[225px]">
               <h3 className="text-dark-gray">Advanced Technology</h3>
-              <p className=" text-metalic">
+              <span className="text-metalic">
                 We offer only the latest technologies on the market
-              </p>
+              </span>
             </div>
           </div>
         </div>
@@ -260,14 +256,14 @@ function Home() {
         <div className="flex w-[1200px] mt-16 justify-between">
           <div className="flex flex-col">
             <div className="flex items-left justify-center text-base text-metalic w-[70%]">
-              <p>
+              <span>
                 A 5.5in 1080p screen integrated with the Phantom 4 Pro + offers
                 1000 cd/m2 of brightness, more than twice as bright as
                 conventional smart devices. It makes bright, vivid colors easily
                 visible in direct sunlight. As the DJI GO 4 app is built into
                 the screen, a mobile device is not required, simplifying
                 pre-flight preparations.
-              </p>
+              </span>
             </div>
             <div className="flex gap-20 mt-5 flex-row">
               <div className="flex flex-col gap-3 text-sm">
@@ -321,16 +317,13 @@ function Home() {
               CONTACT US
             </h3>
             <p className="flex items-center       text-metalic">
-              {" "}
               We are a team of designers and developers who creates high quality
-              premium Shopify themes.{" "}
+              premium Shopify themes.
             </p>
             <p className="flex items-center gap-4 text-metalic">
-              {" "}
               <IoLocationOutline /> No 40 Baria Sreet 133/2, NewYork, USA.
             </p>
             <p className="flex items-center gap-4 text-metalic">
-              {" "}
               <MdPhoneIphone />
               (012) 800 456 789
             </p>
@@ -367,7 +360,7 @@ function Home() {
            text-3xl cursor-pointer rounded-[10px] transition-all duration-300 ease-in fixed bottom-5 right-5"
             style={{ display: floatingIconButtonStyle }}
             onClick={() => {
-              window.scroll({top: 0, left: 0, behavior: 'smooth'})
+              window.scroll({ top: 0, left: 0, behavior: "smooth" });
             }}
           >
             <LuChevronUp />
@@ -375,7 +368,9 @@ function Home() {
         </div>
         <div className="flex flex-row w-full bg-blue-300 justify-around items-center mt-4 h-16">
           <div className="copyright text-white font-medium text-sm">
-            <p>Copyright © 2024 MassTechnologist.com. All rights reserved.</p>
+            <span>
+              Copyright © 2024 MassTechnologist.com. All rights reserved.
+            </span>
           </div>
           <div className="flex gap-4 text-white ">
             <GrCreditCard />
@@ -383,25 +378,20 @@ function Home() {
             <GrCreditCard />
           </div>
           <div className="flex flex-row gap-3 cursor-pointer">
-            <div className="facebook      border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
-              {" "}
-              <FaFacebookF />{" "}
+            <div className="facebook border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
+              <FaFacebookF />
             </div>
-            <div className="twitter       border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
-              {" "}
-              <IoLogoTwitter />{" "}
+            <div className="twitter border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
+              <IoLogoTwitter />
             </div>
-            <div className="pinterest     border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
-              {" "}
-              <FaPinterestP />{" "}
+            <div className="pinterest border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
+              <FaPinterestP />
             </div>
-            <div className="google-plus   border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
-              {" "}
-              <IoLogoGoogleplus />{" "}
+            <div className="google-plus border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
+              <IoLogoGoogleplus />
             </div>
-            <div className="instagram     border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
-              {" "}
-              <GrInstagram />{" "}
+            <div className="instagram border-[1px] border-white rounded-full px-2 py-2 text-white hover:text-blue-300 hover:bg-white">
+              <GrInstagram />
             </div>
           </div>
         </div>
@@ -424,8 +414,8 @@ function ScreenContainerContent(iconUrl, Title, Description) {
         <img src={iconUrl} className="aspect-auto max-h-10" />
       </div>
       <div className="flex flex-col text-dark-gray gap-1">
-        <p>{Title}</p>
-        <p>{Description}</p>
+        <span>{Title}</span>
+        <span>{Description}</span>
       </div>
     </div>
   );
