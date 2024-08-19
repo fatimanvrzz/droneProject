@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PiArrowBendUpRightDuotone } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdPhoneIphone } from "react-icons/md";
@@ -15,13 +15,16 @@ function Home() {
   const [floatingIconButtonStyle, setFloatingIconButtonStyle] =
     useState("none");
 
-  window.onscroll = function () {
-    if (document.documentElement.scrollTop > 100) {
-      setFloatingIconButtonStyle("block");
-    } else {
-      setFloatingIconButtonStyle("none");
-    }
-  };
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (document.documentElement.scrollTop > 100) {
+        setFloatingIconButtonStyle("block");
+      } else {
+        setFloatingIconButtonStyle("none");
+      }
+    }, { passive: true });
+  }, []);
+  
 
   return (
     <>

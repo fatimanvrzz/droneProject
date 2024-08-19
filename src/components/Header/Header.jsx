@@ -4,19 +4,20 @@ import { BsBasket2 } from "react-icons/bs";
 import { TbSettings } from "react-icons/tb";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaChevronDown } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Header() {
   const [headerBackgroundColorStyle, setHeaderBackgroundColorStyle] = useState("rgba(147, 197, 253, 0)");
 
-  window.onscroll = function () {
-    if (document.documentElement.scrollTop > 150) {
-      setHeaderBackgroundColorStyle("rgba(147, 197, 253, 255)");
-    } else {
-      setHeaderBackgroundColorStyle("rgba(147, 197, 253, 0)");
-    }
-  };
-
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (document.documentElement.scrollTop > 100) {
+        setHeaderBackgroundColorStyle("rgba(147, 197, 253, 255)");
+      } else {
+        setHeaderBackgroundColorStyle("rgba(147, 197, 253, 0)");
+      }
+    }, { passive: true });
+  }, []);
 
   return (
     <div
