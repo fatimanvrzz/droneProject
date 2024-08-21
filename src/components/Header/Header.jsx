@@ -30,12 +30,11 @@ function Header() {
       <div className="">
         <img
           src="https://elomus-theme.myshopify.com/cdn/shop/files/logo-elomus.png?v=1613722537"
-          alt=""
           className="h-6 aspect-auto"
         />
       </div>
       <div className="flex gap-8 text-white">
-        {linkToPage("/", "Home")}
+        {linkToPage("/", "Home")} 
         {linkToPage("/", "Shop")}
         {linkToPage("/", "Top Products")}
         {linkToPage("/", "Product Pages")}
@@ -55,7 +54,7 @@ function linkToPage(link, text) {
   return (
     <a
       href={link}
-      className="w-fit flex flex-row items-center justify-center gap-2 border rounded-full px-5 py-2"
+      className="w-fit flex flex-row items-center justify-center gap-2 border rounded-full px-5 py-2  hover:bg-white hover:text-blue-300"
     >
       {text}
       <FaChevronDown size={"0.7rem"} />
